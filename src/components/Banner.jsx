@@ -1,23 +1,6 @@
-
+import bookswapbanner from "../assets/BookSwap.png";
 const Banner = () => {
   return (
-    // <>
-    //   <div
-    //     className="flex justify-between bg-[#eeeee4] h-[500px]"
-    //   >
-    //     <div className="justify-center">
-    //       <p>this is text part</p>
-
-    //       <h1 className="flex items-center text-center text-5xl">
-    //         <span>Welcome to</span>   <span>BookSwap</span>
-    //       </h1>
-    //     </div>
-    //     <div className="flex  justify-center">
-    //       <img src="../../src/assets/Book Swap.jpg" alt="Placeholder" />
-    //     </div>
-    //   </div>
-    // </>
-
     <section className="container  bg-gray-100 py-12 ">
       <div
         className=" flex flex-col md:flex-row
@@ -45,11 +28,7 @@ const Banner = () => {
 
         {/* Right side - Image */}
         <div className=" md:block w-full md:w-1/2">
-          <img
-            src="../../src/assets/Book Swap.jpg"
-            alt="Book swapping"
-            className="w-full"
-          />
+          <img src={bookswapbanner} alt="Book swapping" className="w-full" />
         </div>
       </div>
     </section>
