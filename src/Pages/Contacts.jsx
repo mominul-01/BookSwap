@@ -1,14 +1,17 @@
+import momin from "../assets/Mominul.jpg";
+import riyanka from "../assets/riyanka.jpg";
+
 const Contacts = () => {
   const contacts = [
     {
-      name: "Sandra Bernotaitė",
+      name: "Mominul Islam",
       role: "Product Manager",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
+      image: momin,
     },
     {
-      name: "Nora Žaliūke",
+      name: "Riyanka Biswas ",
       role: "Head of Content",
-      image: "https://randomuser.me/api/portraits/women/45.jpg",
+      image: riyanka,
     },
   ];
 

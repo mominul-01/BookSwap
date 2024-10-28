@@ -4,6 +4,7 @@ import { CiShoppingCart } from "react-icons/ci";
 import { IoIosMenu, IoMdNotificationsOutline } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 import { RxAvatar } from "react-icons/rx";
+import { MdFavorite } from "react-icons/md";
 
 import { NavLink } from "react-router-dom";
 import MessageBox from "../components/navbar/MessagesBox";
@@ -38,11 +39,11 @@ const Navbar = () => {
         {/* Navbar Icons */}
         <div className="hidden lg:flex items-center space-x-6 text-gray-500">
           <NavLink
-            to="/cart"
+            to="/wishlists"
             className={({ isActive }) => (isActive ? "text-teal-500" : "")}
           >
             <button>
-              <CiShoppingCart className="h-10 w-8 hover:fill-blue-500 " />
+              <MdFavorite className="h-10 w-8 hover:fill-blue-500 " />
             </button>
           </NavLink>
 

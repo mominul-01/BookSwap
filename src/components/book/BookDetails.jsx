@@ -2,10 +2,11 @@ import { useParams } from "react-router-dom";
 import books from "../../db/books.js";
 import BookOwnerInfo from "./BookOwnerInfo.jsx";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const BookDetails = () => {
-
   const navigate = useNavigate();
+  const [isWishlist, setIsWishlist] = useState(false);
 
   const { id } = useParams();
 
@@ -14,18 +15,41 @@ const BookDetails = () => {
     .flat()
     .find((book) => book.id === parseInt(id));
 
+  useEffect(() => {
+    // Retrieve wishlist data from localStorage
+    const storedWishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+    const isActive = storedWishlist.some((wishlist) => wishlist.id === book.id); // true or false
+    setIsWishlist(isActive);
+  }, [book, isWishlist]);
+
   if (!book) {
     return <div className="container mx-auto py-8">Book not found.</div>;
   }
+
   const ownerInfo = {
-    id:book.id,
+    id: book.id,
     name: book.username,
-    location: "Chuadanga", 
+    location: "Chuadanga",
     profileImage: book.userpicture,
-    suggestedBooks: 0, 
+    suggestedBooks: 0,
     wantedBooks: 0,
     booksReceived: 0,
     booksSent: 0,
+  };
+
+  const addToWishlist = () => {
+    // Retrieve existing wishlist from localStorage
+    let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+    // Save the updated wishlist to localStorage
+    if (!isWishlist) {
+      setIsWishlist(true);
+      wishlist.push(book);
+    } else {
+      setIsWishlist(false);
+      wishlist = wishlist.filter((wishlistItem) => wishlistItem.id !== book.id);
+    }
+    localStorage.setItem("wishlist", JSON.stringify(wishlist));
   };
 
   return (
@@ -40,11 +64,14 @@ const BookDetails = () => {
       <div className="lg:w-2/3 flex flex-col">
         <div className="flex justify-between items-center mb-4">
           <div className="flex space-x-3">
-            <button className="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-200">
+            {/* <button className="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-200">
               Recommend this book +
-            </button>
-            <button className="bg-red-100 text-red-600 px-4 py-2 rounded-lg hover:bg-red-200">
-              Add to wishlist ❤️
+            </button> */}
+            <button
+              className="bg-red-100 text-red-600 px-4 py-2 rounded-lg hover:bg-red-200"
+              onClick={addToWishlist}
+            >
+              {isWishlist ? "Remove to wishlist ❤️" : "Add to wishlist ❤️"}
             </button>
           </div>
         </div>

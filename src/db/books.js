@@ -9,9 +9,9 @@ const books = {
       page: "224",
       publisher: "Rokomari",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/51VnM1EZodL._SX321_BO1,204,203,200_.jpg",
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1423324946i/23519023.jpg",
       description:
-        "A classic novel depicting the life and struggles of fishermen living by the Padma river.",
+        "As he interacts with various characters and confronts his life's difficulties, the novel delves into themes of human resilience, survival, and the impact of nature on human lives. It also portrays the oppressive social structures that keep people trapped in cycles of poverty. Manik Bandopadhyay's storytelling captures the raw beauty and hardships of riverine life, with a compassionate focus on the marginalized. the life and struggles of fishermen living by the Padma river.",
     },
     {
       id: 2,
@@ -22,9 +22,9 @@ const books = {
       page: "184",
       publisher: "Ananda Publishers",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41SDX9XXC5L._SX326_BO1,204,203,200_.jpg",
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1522306734i/7623112.jpg",
       description:
-        "A tragic love story that explores themes of unfulfilled love, societal pressure, and self-destruction.",
+        "Heartbroken, Devdas spirals into self-destructive behavior, turning to alcohol and developing a close relationship with Chandramukhi, a kind-hearted courtesan who falls in love with him. Despite her support, Devdas remains unable to move on from his love for Paro. His unresolved longing and excessive drinking ultimately lead to his tragic demise, marking *Devdas* as a tale of unfulfilled love, heartbreak, and the devastating effects of societal norms. explores themes of unfulfilled love, societal pressure, and self-destruction.",
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ const books = {
       page: "275",
       publisher: "Rupa Publications",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41t8OiADuUL._SX324_BO1,204,203,200_.jpg",
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1425818682i/7936528.jpg",
       description:
         "An adventure story of a young man’s journey to Africa and his encounter with the wilderness.",
     },
@@ -48,7 +48,7 @@ const books = {
       page: "336",
       publisher: "Visva-Bharati",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41cb4ANHJGL._SX327_BO1,204,203,200_.jpg",
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1346775032i/15989094.jpg",
       description:
         "A thought-provoking novel that examines identity, nationalism, and the social fabric of India during the British era.",
     },
@@ -61,7 +61,7 @@ const books = {
       page: "200",
       publisher: "Dey’s Publishing",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41w8FnQO6uL._SX332_BO1,204,203,200_.jpg",
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1519281990i/17203961.jpg",
       description:
         "A story about friends exploring the unknowns of life during a journey into the forest.",
     },
@@ -74,7 +74,7 @@ const books = {
       page: "240",
       publisher: "Rokomari",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41uQX3GB-QL._SX322_BO1,204,203,200_.jpg",
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1676811673i/3084276.jpg",
       description:
         "A novel that captures the beauty of the wilderness and the simple lives of people living close to nature.",
     },
@@ -87,7 +87,7 @@ const books = {
       page: "96",
       publisher: "Ananda Publishers",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41OekNGb8tL._SX320_BO1,204,203,200_.jpg",
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348569460l/10330335.jpg",
       description:
         "A touching tale of the bond between a little girl and a Pathan trader, exploring themes of love and loss.",
     },
@@ -100,7 +100,7 @@ const books = {
       page: "352",
       publisher: "Dey’s Publishing",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41P0MvX4y9L._SX321_BO1,204,203,200_.jpg",
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1289978820i/8998592.jpg",
       description:
         "A beautifully crafted story that follows the struggles and dreams of a poor family in rural Bengal.",
     },
@@ -113,7 +113,7 @@ const books = {
       page: "160",
       publisher: "Rupa Publications",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41xLK2lSSCL._SX329_BO1,204,203,200_.jpg",
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1518220568i/32721720.jpg",
       description:
         "A poignant story about the struggles of the middle-class and the complexities of human relationships.",
     },
@@ -126,10 +126,11 @@ const books = {
       page: "128",
       publisher: "Visva-Bharati",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41chHDoIBhL._SX320_BO1,204,203,200_.jpg",
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1407928798i/22911245.jpg",
       description:
         "A play that allegorically represents human freedom, power, and the desire for liberation.",
     },
+
     {
       id: 11,
       title: "The Great Gatsby",
@@ -257,7 +258,7 @@ const books = {
       page: "320",
       publisher: "Ananya Publishers",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/51aXlElQJBL._SX327_BO1,204,203,200_.jpg",
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1289977897i/8998388.jpg",
       description:
         "A diary-based account of the 1971 Liberation War of Bangladesh, depicting the pain, struggle, and resilience of the people.",
     },
@@ -266,11 +267,11 @@ const books = {
       title: "আমার দেখা নয়াচীন",
       username: "Rehana",
       userpicture: "https://randomuser.me/api/portraits/women/4.jpg",
-      author: "কাজী নজরুল ইসলাম",
+      author: " বঙ্গবন্ধু শেখ মুজিবুর রহমান",
       page: "240",
       publisher: "Bangla Academy",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41-gXZKj9ML._SX324_BO1,204,203,200_.jpg",
+        "https://www.rokomari.com/_next/image?url=https%3A%2F%2Fimg.cf.rokomari.com%2FProductNew20190903%2F130X186%2F935b848fc_195529.jpg&w=128&q=75",
       description:
         "Kazi Nazrul Islam’s travelogue of his visit to China, offering insights into the culture and society of the country.",
     },
@@ -279,102 +280,102 @@ const books = {
       title: "বিপ্লবী আত্মকথা",
       username: "Imran",
       userpicture: "https://randomuser.me/api/portraits/men/10.jpg",
-      author: "সুভাষ চন্দ্র বসু",
+      author: " সরৎচন্দ্র দাস",
       page: "290",
       publisher: "Sahitya Prakash",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41GVwZr0ccL._SX321_BO1,204,203,200_.jpg",
+        "https://www.rokomari.com/_next/image?url=https%3A%2F%2Fimg.cf.rokomari.com%2FProductNew20190903%2F130X186%2FAtmakatha-Sarat_Chandra_Das-33fc3-321394.jpg&w=128&q=75",
       description:
         "The autobiography of Subhas Chandra Bose, detailing his thoughts, ideologies, and the revolutionary movement in India.",
     },
     {
       id: 24,
-      title: "বাংলাদেশ: একটি জাতির আবির্ভাব",
+      title: "একটি জাতির আত্মপ্রতিষ্ঠা",
       username: "Kamal",
       userpicture: "https://randomuser.me/api/portraits/men/11.jpg",
-      author: "বিজন শর্মা",
+      author: " মোস্তাক আহ্‌মাদ",
       page: "350",
       publisher: "Prothoma Prokashon",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/51FUVHXEWSL._SX328_BO1,204,203,200_.jpg",
+        "https://img.cf.rokomari.com/ProductNew20190903/260X372/imgrok0704_42222.GIF",
       description:
         "A detailed history of Bangladesh’s struggle for independence and the events leading up to the birth of the nation.",
     },
     {
       id: 25,
-      title: "প্রত্যক্ষ যুদ্ধ",
+      title: "বাংলাদেশের স্বাধীনতা যুদ্ধ নারীর প্রত্যক্ষ অংশগ্রহন",
       username: "Farzana",
       userpicture: "https://randomuser.me/api/portraits/women/5.jpg",
-      author: "মুক্তিযোদ্ধা কমান্ড কাউন্সিল",
+      author: "আসমা পারভীন",
       page: "310",
       publisher: "Bangladesh Army Publications",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41VQMCjXEQL._SX326_BO1,204,203,200_.jpg",
+        "https://img.cf.rokomari.com/ProductNew20190903/260X372/imgrok0602_21317.GIF",
       description:
         "A compilation of firsthand accounts from freedom fighters, providing a raw and honest portrayal of the Liberation War.",
     },
     {
       id: 26,
-      title: "বিশ্বপরিচয়",
+      title: "বিসর্জন",
       username: "Arifa",
       userpicture: "https://randomuser.me/api/portraits/women/6.jpg",
       author: "রবীন্দ্রনাথ ঠাকুর",
       page: "180",
       publisher: "Visva-Bharati",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41X1iQdRWGL._SX322_BO1,204,203,200_.jpg",
+        "https://img.cf.rokomari.com/ProductNew20190903/260X372/Bisarjan_-Rabindranath_Tagore-66bbd-263528.jpg",
       description:
         "An exploration of the universe and human existence through Rabindranath Tagore’s perspective, blending philosophy and science.",
     },
     {
       id: 27,
-      title: "নেতাজি রূপকথা নয়",
+      title: " চুপকথা রূপকথা",
       username: "Sujon",
       userpicture: "https://randomuser.me/api/portraits/men/12.jpg",
-      author: "মধ্যম",
+      author: " অহনা বিশ্বাস",
       page: "200",
       publisher: "Dey’s Publishing",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41j5ZVSR0xL._SX329_BO1,204,203,200_.jpg",
+        "https://img.cf.rokomari.com/ProductNew20190903/260X372/Chupkatha_Rupkatha-Ahona_Bishwas-0da28-322807.jpg",
       description:
         "A well-researched book that separates the myth from reality in the life of Netaji Subhas Chandra Bose.",
     },
     {
       id: 28,
-      title: "আধুনিক বাংলার বিজ্ঞান",
+      title: "আধুনিক জীবন ও বিজ্ঞান",
       username: "Mahbub",
       userpicture: "https://randomuser.me/api/portraits/men/13.jpg",
-      author: "ড. জাফর ইকবাল",
+      author: "প্রফেসর ড. নিশীথ কুমার পাল",
       page: "220",
       publisher: "Ananya Publishers",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41bdvW6L7bL._SX327_BO1,204,203,200_.jpg",
+        "https://www.rokomari.com/_next/image?url=https%3A%2F%2Fimg.cf.rokomari.com%2FProductNew20190903%2F130X186%2F84cded724_179926.jpg&w=128&q=75",
       description:
         "A nonfiction work that explores scientific developments and their impacts on modern Bengali society.",
     },
     {
       id: 29,
-      title: "বঙ্গবন্ধু শেখ মুজিবুর রহমানের আত্মজীবনী",
+      title: "গ্রাফিক নভেল-১ : মুজিব ",
       username: "Nazmul",
       userpicture: "https://randomuser.me/api/portraits/men/14.jpg",
-      author: "শেখ মুজিবুর রহমান",
+      author: "সেন্টার ফর রিসার্চ এন্ড ইনফরমেশন",
       page: "400",
       publisher: "University Press Limited",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/51YmoxjXKFL._SX321_BO1,204,203,200_.jpg",
+        "https://www.rokomari.com/_next/image?url=https%3A%2F%2Fimg.cf.rokomari.com%2FProductNew20190903%2F130X186%2F4c1b7edec_98287.jpg&w=128&q=75",
       description:
         "The autobiography of Sheikh Mujibur Rahman, offering deep insights into his life, struggles, and vision for Bangladesh.",
     },
     {
       id: 30,
-      title: "পৃথিবী ও জীবন",
+      title: "বিপন্ন পৃথিবী: জল জলবায়ু ও জীবন ",
       username: "Sajeda",
       userpicture: "https://randomuser.me/api/portraits/women/7.jpg",
-      author: "ড. জগদীশ চন্দ্র বসু",
+      author: " আজাদুর রহমান চন্দন",
       page: "210",
       publisher: "Bangla Academy",
       cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41NK-XFMB1L._SX325_BO1,204,203,200_.jpg",
+        "rokomari.com%2FProductNew20190903%2F130X186%2Ffde44be82ae4_33229.gif&w=128&q=75",
       description:
         "A book that delves into the mysteries of life and the natural world, written by one of the pioneering scientists of Bengal.",
     },
@@ -382,49 +383,53 @@ const books = {
   fantasy: [
     {
       id: 31,
-      title: "পিশাচের রাজ্য",
+      title: "পিশাচ সমগ্র",
       username: "Arif",
       userpicture: "https://randomuser.me/api/portraits/men/20.jpg",
       author: "মুহম্মদ জাফর ইকবাল",
       page: "260",
       publisher: "Rokomari",
-      cover: "https://example.com/cover31.jpg",
+      cover:
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1717492297i/26040828.jpg",
       description:
-        "A chilling tale of an ancient kingdom ruled by sinister creatures of the night.",
+        "ওয়ারউলফ অর্থাৎ বিশেষ বিশেষ রাতে মানুষের নেকড়ে হয়ে যাওয়ার কাহিনি নয়, আবার ব্রাম স্টোকারের অবিস্মরণীয় রক্তচোষা ‘ড্রাকুলা’ও নয়। পিশাচ কোনও মানুষ বা অপমানুষের কথা নয়, হঠাৎ-হঠাৎ স্বাভাবিক মানুষ থেকে ভয়ংকর রক্তপিপাসু পিশাচ হয়ে ওঠার হাড় হিম করা সব কাহিনি! অনীশ দেব অসামান্য দক্ষতার শীর্ষে পৌঁছে গেছেন তাঁর ’পিশাচ’ সিরিজের কাহিনিগুলিতে, যা পত্রপত্রিকায় বা বই হয়ে বেরোনোর সঙ্গে সঙ্গে তাঁর অসংখ্য গুণগ্রাহী পাঠক-পাঠিকা ঝাঁপিয়ে পড়তেন। মোট ছয়টি ‘পিশাচ’কাহিনি― আমি পিশাচ, তুমি পিশাচ, পিশাচ প্রহর ১, ২ ও ৩ এবং পিশাচের রাত একত্রিত হয়ে ‘পিশাচ সমগ্র’ এই প্রথম।",
     },
     {
       id: 32,
-      title: "রহস্যময় পাহাড়",
+      title: "রহস্যময় আদম পাহাড়",
       username: "Nadia",
       userpicture: "https://randomuser.me/api/portraits/women/13.jpg",
-      author: "সমরেশ বসু",
+      author: "উদয় হাকিম",
       page: "280",
       publisher: "Ananda Publishers",
-      cover: "https://example.com/cover32.jpg",
+      cover:
+        "https://www.rokomari.com/_next/image?url=https%3A%2F%2Fimg.cf.rokomari.com%2FProductNew20190903%2F130X186%2Ffa3d55f18_197434.jpg&w=128&q=75",
       description:
         "An adventure up a mysterious mountain that holds secrets and magical wonders.",
     },
     {
       id: 33,
-      title: "মায়াবী নদী",
+      title: " নদী",
       username: "Farhan",
       userpicture: "https://randomuser.me/api/portraits/men/21.jpg",
-      author: "শীর্ষেন্দু মুখোপাধ্যায়",
+      author: " মাহমুদ শামসুল হক",
       page: "200",
       publisher: "Prothoma Prokashon",
-      cover: "https://example.com/cover33.jpg",
+      cover:
+        "https://www.rokomari.com/_next/image?url=https%3A%2F%2Fimg.cf.rokomari.com%2FProductNew20190903%2F130X186%2Frokimg_20140707_10634.GIF&w=128&q=75",
       description:
         "A river with a mystical aura that can grant wishes but at a great price.",
     },
     {
       id: 34,
-      title: "গোপন দ্বীপের কাহিনী",
+      title: "অজানা দ্বীপের কাহিনী",
       username: "Sonia",
       userpicture: "https://randomuser.me/api/portraits/women/14.jpg",
-      author: "বিভূতিভূষণ বন্দ্যোপাধ্যায়",
+      author: "মুহাম্মদ সাখাওয়াত হুসাইন",
       page: "220",
       publisher: "Onno Prokash",
-      cover: "https://example.com/cover34.jpg",
+      cover:
+        "https://www.rokomari.com/_next/image?url=https%3A%2F%2Fimg.cf.rokomari.com%2FProductNew20190903%2F130X186%2F681d6b62b_44661.jpg&w=128&q=75",
       description:
         "A gripping story of an island where time and reality twist in unexpected ways.",
     },
@@ -433,10 +438,11 @@ const books = {
       title: "মৃত্যুপুরী",
       username: "Tanvir",
       userpicture: "https://randomuser.me/api/portraits/men/22.jpg",
-      author: "হুমায়ুন আহমেদ",
+      author: "জাবের রহমান",
       page: "240",
       publisher: "Rupa Publications",
-      cover: "https://example.com/cover35.jpg",
+      cover:
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1544717968i/43224331.jpg",
       description:
         "A tale set in a land where life and death intermingle, and the boundary between them blurs.",
     },
@@ -505,10 +511,11 @@ const books = {
       title: "বিজ্ঞানীর ডায়েরি",
       username: "Ashiq",
       userpicture: "https://randomuser.me/api/portraits/men/23.jpg",
-      author: "মুহম্মদ জাফর ইকবাল",
+      author: "প্রফেসর ড. নিশীথ কুমার পাল",
       page: "180",
       publisher: "Ananda Publishers",
-      cover: "https://example.com/science40.jpg",
+      cover:
+        "https://www.rokomari.com/_next/image?url=https%3A%2F%2Fimg.cf.rokomari.com%2FProductNew20190903%2F130X186%2F4635a21ea_199637.jpg&w=128&q=75",
       description:
         "A fascinating journey into the life and discoveries of famous scientists, presented in an engaging manner for young readers.",
     },
@@ -517,10 +524,10 @@ const books = {
       title: "মহাবিশ্বের রহস্য",
       username: "Rekha",
       userpicture: "https://randomuser.me/api/portraits/women/15.jpg",
-      author: "আবুল বাশার",
-      page: "250",
+      author: " সৌমেন সাহা",
       publisher: "Prothoma Prokashon",
-      cover: "https://example.com/science41.jpg",
+      cover:
+        "https://www.rokomari.com/_next/image?url=https%3A%2F%2Fimg.cf.rokomari.com%2FProductNew20190903%2F130X186%2Fb774407ac_196832.jpg&w=128&q=75",
       description:
         "An exploration of the mysteries of the universe, including black holes, galaxies, and the origins of the cosmos.",
     },
@@ -529,34 +536,37 @@ const books = {
       title: "জ্যোতির্বিজ্ঞান পরিচিতি",
       username: "Kamal",
       userpicture: "https://randomuser.me/api/portraits/men/24.jpg",
-      author: "অজয় রায়",
+      author: " মুহাম্মদ বুরহান উদ্দিন",
       page: "220",
       publisher: "Rokomari",
-      cover: "https://example.com/science42.jpg",
+      cover:
+        "https://www.rokomari.com/_next/image?url=https%3A%2F%2Fimg.cf.rokomari.com%2FProductNew20190903%2F130X186%2FJotirbiggan_1st_Part-Muhammad_Burhan_Uddin-495f4-423981.jpeg&w=256&q=75",
       description:
         "An introduction to astronomy, discussing stars, planets, and the structure of the solar system in simple terms.",
     },
     {
       id: 44,
-      title: "প্রাণের রহস্য",
+      title: "প্রাণের রহস্য সন্ধানে বিজ্ঞান",
       username: "Shirin",
       userpicture: "https://randomuser.me/api/portraits/women/16.jpg",
-      author: "হাসান আজিজুল হক",
+      author: " অপরাজিত বসু",
       page: "200",
       publisher: "Onno Prokash",
-      cover: "https://example.com/science43.jpg",
+      cover:
+        "https://www.rokomari.com/_next/image?url=https%3A%2F%2Fimg.cf.rokomari.com%2FProductNew20190903%2F130X186%2F37ee0438bd64_36950.gif&w=128&q=75",
       description:
         "A deep dive into the mysteries of life, exploring the origins of life, DNA, and the complex systems of living organisms.",
     },
     {
       id: 45,
-      title: "পরমাণু থেকে মহাবিশ্ব",
+      title: "পরমাণু ও পরমাণু শক্তি",
       username: "Rashid",
       userpicture: "https://randomuser.me/api/portraits/men/25.jpg",
-      author: "ড. অজিত কুমার দত্ত",
+      author: " আইজ্যাক আসিমভ ,  আবুল বাসার",
       page: "300",
       publisher: "Ananya Publishers",
-      cover: "https://example.com/science44.jpg",
+      cover:
+        "https://www.rokomari.com/_next/image?url=https%3A%2F%2Fimg.cf.rokomari.com%2FProductNew20190903%2F130X186%2F6070304a2_211074.jpg&w=128&q=75",
       description:
         "A comprehensive guide to the world of physics, from the smallest particles to the vast expanses of the universe.",
     },
@@ -567,7 +577,8 @@ const books = {
       userpicture: "https://randomuser.me/api/portraits/women/16.jpg",
       author: "Stephen Hawking",
       page: "212",
-      cover: "https://m.media-amazon.com/images/I/81X5e2l0HfL.jpg",
+      cover:
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1333578746i/3869.jpg",
       description:
         "Hawking's exploration of the universe, covering topics from the Big Bang to black holes in an accessible manner.",
     },
@@ -578,7 +589,8 @@ const books = {
       userpicture: "https://randomuser.me/api/portraits/men/17.jpg",
       author: "Siddhartha Mukherjee",
       page: "592",
-      cover: "https://m.media-amazon.com/images/I/81YR4ZTPFaL.jpg",
+      cover:
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1452452965i/27276428.jpg",
       description:
         "A history of genetics, from ancient theories of heredity to the discovery of the double helix and the future of genetic engineering.",
     },
@@ -589,7 +601,8 @@ const books = {
       userpicture: "https://randomuser.me/api/portraits/women/18.jpg",
       author: "Carl Sagan",
       page: "396",
-      cover: "https://m.media-amazon.com/images/I/91jY1S5a4TL.jpg",
+      cover:
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388620656i/55030.jpg",
       description:
         "Sagan's classic work that explores the universe, the origin of life, and the future of human civilization in the cosmos.",
     },
@@ -600,7 +613,8 @@ const books = {
       userpicture: "https://randomuser.me/api/portraits/men/19.jpg",
       author: "Richard Dawkins",
       page: "360",
-      cover: "https://m.media-amazon.com/images/I/81t7jSp7cEL.jpg",
+      cover:
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1366758096i/61535.jpg",
       description:
         "Dawkins' revolutionary view of evolution, focusing on how genes shape behavior and the natural world.",
     },
@@ -611,7 +625,8 @@ const books = {
       userpicture: "https://randomuser.me/api/portraits/women/20.jpg",
       author: "Rebecca Skloot",
       page: "381",
-      cover: "https://m.media-amazon.com/images/I/71b2ZYEXC1L.jpg",
+      cover:
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327878144i/6493208.jpg",
       description:
         "The story of Henrietta Lacks and the immortal cell line known as HeLa, which has contributed to countless medical breakthroughs.",
     },
@@ -624,7 +639,8 @@ const books = {
       userpicture: "https://randomuser.me/api/portraits/men/21.jpg",
       author: "Jared Diamond",
       page: "528",
-      cover: "https://m.media-amazon.com/images/I/81DvgsoFheL.jpg",
+      cover:
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1453215833i/1842.jpg",
       description:
         "An exploration of how geography and environment have shaped the fate of human societies throughout history.",
     },
@@ -635,7 +651,8 @@ const books = {
       userpicture: "https://randomuser.me/api/portraits/women/22.jpg",
       author: "Peter Frankopan",
       page: "636",
-      cover: "https://m.media-amazon.com/images/I/81R5xQH-2rL.jpg",
+      cover:
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1472636067i/25812847.jpg",
       description:
         "A new history of the world, focusing on the central role of the Silk Roads in connecting East and West.",
     },
@@ -646,7 +663,8 @@ const books = {
       userpicture: "https://randomuser.me/api/portraits/men/23.jpg",
       author: "Howard Zinn",
       page: "729",
-      cover: "https://m.media-amazon.com/images/I/81qKzOeW0lL.jpg",
+      cover:
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1494279423i/2767.jpg",
       description:
         "Zinn's revisionist take on American history, told from the perspective of marginalized groups.",
     },
@@ -657,7 +675,8 @@ const books = {
       userpicture: "https://randomuser.me/api/portraits/women/24.jpg",
       author: "David McCullough",
       page: "320",
-      cover: "https://m.media-amazon.com/images/I/71bRMY7W1fL.jpg",
+      cover:
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1430942575i/22609391.jpg",
       description:
         "The story of the Wright brothers and their pioneering efforts in the field of aviation.",
     },
@@ -678,10 +697,11 @@ const books = {
       title: "বাংলার ইতিহাস",
       username: "Anik",
       userpicture: "https://randomuser.me/api/portraits/men/26.jpg",
-      author: "মুনতাসীর মামুন",
+      author: "আবদুল করিম",
       page: "320",
       publisher: "Prothoma Prokashon",
-      cover: "https://example.com/history55.jpg",
+      cover:
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1502137041i/20403000.jpg",
       description:
         "A detailed account of the history of Bengal, covering ancient, medieval, and modern periods with rich cultural insights.",
     },
@@ -702,10 +722,11 @@ const books = {
       title: "বাংলাদেশের মুক্তিযুদ্ধ",
       username: "Shuvo",
       userpicture: "https://randomuser.me/api/portraits/men/27.jpg",
-      author: "আবদুল গাফফার চৌধুরী",
+      author: "আসাদ চৌধুরী",
       page: "350",
       publisher: "Rokomari",
-      cover: "https://example.com/history57.jpg",
+      cover:
+        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1657775211i/52811760.jpg",
       description:
         "An in-depth study of the Bangladesh Liberation War, exploring key events, strategies, and the struggle for independence.",
     },

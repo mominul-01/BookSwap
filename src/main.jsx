@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import BookDetails from "./components/book/BookDetails.jsx";
 import BookOwnerInfo from "./components/book/BookOwnerInfo.jsx";
-import Cart from "./components/navbar/Cart.jsx";
+import Cart from "./components/navbar/Wishlists.jsx";
 import Messages from "./components/navbar/Messages.jsx";
 import Notification from "./components/navbar/Notification.jsx";
 import Profile from "./components/navbar/Profile.jsx";
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         element: <Notification />,
       },
       {
-        path: "/cart",
+        path: "/wishlists",
         element: <Cart />,
       },
       {
