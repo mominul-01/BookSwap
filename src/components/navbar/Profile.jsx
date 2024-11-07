@@ -1,5 +1,6 @@
 import { useState } from "react";
 import momin from "../../assets/Mominul.jpg";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   const [name, setName] = useState("Mominul");
@@ -11,22 +12,30 @@ const Profile = () => {
     //   <BookOwnerInfo owner={ownerInfo} />
     // </div>
 
-    <div className="container mx-auto my-8 p-6 bg-gray-100 shadow-md rounded-lg">
-      <h1 className="text-4xl font-bold text-center mb-8">My Account</h1>
-      <div className="flex flex-col lg:flex-row gap-8">
+    <div className="container p-6 mx-auto my-8 bg-gray-100 rounded-lg shadow-md">
+      <h1 className="mb-8 text-4xl font-bold text-center">My Account</h1>
+      <div className="flex flex-col gap-8 lg:flex-row">
         {/* Profile Information */}
-        <div className="flex flex-col items-center lg:w-1/3 bg-white p-6 rounded-lg shadow-md">
-          <div className="w-24 h-24 bg-teal-200 rounded-full flex items-center justify-center text-gray-500 font-semibold text-sm mb-4">
+        <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md lg:w-1/3">
+          <div className="flex items-center justify-center w-24 h-24 mb-4 text-sm font-semibold text-gray-500 bg-teal-200 rounded-full">
             <img src={momin} alt="profile picture" />
           </div>
-          <h2 className="text-xl font-semibold text-teal-700 mb-1">
+          <h2 className="mb-1 text-xl font-semibold text-teal-700">
             Mominul Islam
           </h2>
-          <p className="text-gray-500 mb-4">There is no rating</p>
+          <p className="mb-4 text-gray-500">There is no rating</p>
+
+          {/* //Upload books */}
+          <Link
+            to="/BookUploadForm"
+            className="px-6 py-2 mt-6 text-white bg-teal-500 rounded-md hover:bg-teal-600"
+          >
+            Add Your Book
+          </Link>
         </div>
 
         {/* Account Details */}
-        <div className="lg:w-2/3 flex flex-col bg-white p-6 rounded-lg shadow-md">
+        <div className="flex flex-col p-6 bg-white rounded-lg shadow-md lg:w-2/3">
           <div className="grid grid-cols-2 gap-4 mb-6">
             <div>
               <p className="text-gray-500">Member since:</p>
@@ -82,11 +91,13 @@ const Profile = () => {
           </div>
 
           {/* Save Button */}
-          <button className="mt-6 bg-teal-500 text-white py-2 px-6 rounded-md hover:bg-teal-600">
+          <button className="px-6 py-2 mt-6 text-white bg-teal-500 rounded-md hover:bg-teal-600">
             Save
           </button>
         </div>
       </div>
+      <h1 className="my-8 text-4xl font-bold text-center">Your Book</h1>
+      <div className="p-5 rounded-lg shadow-lg"> No Books</div>
     </div>
   );
 };

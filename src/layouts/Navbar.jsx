@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="container bg-white shadow-md px-8 py-4 flex items-center justify-between relative">
+      <nav className="container relative flex items-center justify-between px-8 py-4 bg-white shadow-md">
         {/* Logo */}
         <div className="flex items-center">
           <NavLink to="/">
@@ -28,22 +28,22 @@ const Navbar = () => {
         <div className="relative flex items-center w-1/2 h-30">
           <input
             type="text"
-            className="w-full h-14 p-2 pl-4 pr-10 text-md border border-gray-200 rounded-full shadow-sm focus:outline-none focus:border-teal-400"
+            className="w-full p-2 pl-4 pr-10 border border-gray-200 rounded-full shadow-sm h-14 text-md focus:outline-none focus:border-teal-400"
             placeholder="Search for books, authors, publishers or members..."
           />
-          <button className="absolute right-2 text-gray-500  ">
-            <IoSearch className="h-10 w-8" />
+          <button className="absolute text-gray-500 right-2 ">
+            <IoSearch className="w-8 h-10" />
           </button>
         </div>
 
         {/* Navbar Icons */}
-        <div className="hidden lg:flex items-center space-x-6 text-gray-500">
+        <div className="items-center hidden space-x-6 text-gray-500 lg:flex">
           <NavLink
             to="/wishlists"
             className={({ isActive }) => (isActive ? "text-teal-500" : "")}
           >
             <button>
-              <MdFavorite className="h-10 w-8 hover:fill-blue-500 " />
+              <MdFavorite className="w-8 h-10 hover:fill-blue-500 " />
             </button>
           </NavLink>
 
@@ -52,7 +52,7 @@ const Navbar = () => {
             className={({ isActive }) => (isActive ? "text-teal-500" : "")}
           >
             <button>
-              <BiConversation className="h-10 w-8" />
+              <BiConversation className="w-8 h-10" />
             </button>
           </NavLink> */}
 
@@ -61,7 +61,7 @@ const Navbar = () => {
             className={({ isActive }) => (isActive ? "text-teal-500" : "")}
           >
             <button>
-              <IoMdNotificationsOutline className="h-10 w-8" />
+              <IoMdNotificationsOutline className="w-8 h-10" />
             </button>
           </NavLink> */}
           <MessageBox />
@@ -75,15 +75,15 @@ const Navbar = () => {
         {isOpen && (
           <div className="flex flex-col lg:hidden items-center space-x-6 p-5 text-gray-500 bg-white drop-shadow absolute top-[100%] left-0 w-full  divide-y divide-dashed">
             <NavLink to={"/cart"} className="flex items-center">
-              <CiShoppingCart className="h-10 w-8 hover:fill-blue-500 " />{" "}
+              <CiShoppingCart className="w-8 h-10 hover:fill-blue-500 " />{" "}
               <span className="mx-2">Cart</span>
             </NavLink>
             <NavLink to="/messages" className="flex items-center">
-              <BiConversation className="h-10 w-8" />
+              <BiConversation className="w-8 h-10" />
               <span className="mx-2">Messages</span>
             </NavLink>
             <NavLink to="/notifications" className="flex items-center">
-              <IoMdNotificationsOutline className="h-10 w-8" />{" "}
+              <IoMdNotificationsOutline className="w-8 h-10" />{" "}
               <span className="mx-2">Notification</span>
             </NavLink>
             {/* Profile */}
@@ -91,9 +91,9 @@ const Navbar = () => {
             <NavLink to="/profile">
               <div className="flex items-center space-x-2">
                 <button>
-                  <RxAvatar className="h-10 w-8" />
+                  <RxAvatar className="w-8 h-10" />
                 </button>
-                <span className="text-md font-medium mx-2">John Doe</span>
+                <span className="mx-2 font-medium text-md">Mominul</span>
               </div>
             </NavLink>
           </div>
@@ -101,7 +101,7 @@ const Navbar = () => {
 
         <div className="block lg:hidden" onClick={() => setIsOpen(!isOpen)}>
           {" "}
-          <IoIosMenu className="h-10 w-10" />
+          <IoIosMenu className="w-10 h-10" />
         </div>
       </nav>
     </>

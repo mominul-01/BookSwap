@@ -51,7 +51,7 @@ const ProfileDropdown = () => {
           }}
         >
           <Avatar alt="Sahos Mia" src="/static/images/avatar/2.jpg" />
-          <span className=" text-sm  font-bold">John Doe</span>
+          <span className="text-sm font-bold ">Mominul</span>
         </IconButton>
         <Menu
           sx={{ mt: "45px" }}

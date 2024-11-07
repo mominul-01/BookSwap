@@ -21,16 +21,16 @@ const Wishlists = () => {
 
   return (
     <div className="container min-h-[600px]">
-      <h1 className="text-4xl text-red-700 font-bold capitalize text-center my-10 ">
+      <h1 className="my-10 text-4xl font-bold text-center text-red-700 capitalize ">
         My Wishes
       </h1>
 
       {wishlist.length === 0 ? (
-        <p className=" text-3xl text-center font-bold m-6">
+        <p className="m-6 text-3xl font-bold text-center ">
           Add your WishList ....{" "}
         </p>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10 m-10">
+        <div className="grid grid-cols-1 m-10 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10">
           {wishlist.map((book) => (
             <BookItem
               key={book.id}

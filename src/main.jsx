@@ -14,6 +14,8 @@ import Help from "./Pages/Help.jsx";
 import Home from "./Pages/Home.jsx";
 import PrivacyPolicy from "./Pages/PrivacyPolicy.jsx";
 import TermsOfUse from "./Pages/TermsOfUse.jsx";
+import MessageBox from "./components/navbar/MessagesBox.jsx";
+import BookUploadForm from "./components/BookUploadForm.jsx";
 
 const router = createBrowserRouter([
   {
@@ -70,6 +72,14 @@ const router = createBrowserRouter([
       {
         path: "/book/:id",
         element: <BookDetails />,
+      },
+      {
+        path: "/massage",
+        element: <Messages />,
+      },
+      {
+        path: "/bookuploadform",
+        element: <BookUploadForm />,
       },
 
       // Add more routes here

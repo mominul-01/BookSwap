@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const BookOwnerInfo = ({ owner }) => {
   console.log(owner);
 
@@ -11,14 +13,14 @@ const BookOwnerInfo = ({ owner }) => {
     booksSent,
   } = owner;
   return (
-    <div className="max-w-4xl p-4 bg-blue-50 shadow-md border rounded-md">
+    <div className="max-w-4xl p-4 border rounded-md shadow-md bg-blue-50">
       <h1 className="text-xl font-semibold text-center">
         Book Owner Information
       </h1>
 
-      <div className="flex flex-col md:flex-row justify-between items-center mt-6">
+      <div className="flex flex-col items-center justify-between mt-6 md:flex-row">
         {/* Profile Section */}
-        <div className="flex flex-col items-center md:items-start md:w-1/3 mb-4 md:mb-0">
+        <div className="flex flex-col items-center mb-4 md:items-start md:w-1/3 md:mb-0">
           <div className="flex items-center gap-4">
             <img
               className="w-24 h-24 rounded-full shadow"
@@ -27,35 +29,35 @@ const BookOwnerInfo = ({ owner }) => {
             />
             <div className="flex flex-col">
               <h4 className="text-lg font-semibold">{name}</h4>
-              <p className="text-md text-blue-400">{location}</p>
+              <p className="text-blue-400 text-md">{location}</p>
             </div>
           </div>
-          <button className="bg-teal-500 text-white px-4 py-2 rounded-lg mt-4 hover:bg-teal-600">
+          <Link to="/messages" className="px-4 py-2 mt-4 text-white bg-teal-500 rounded-lg hover:bg-teal-600">
             Write a message
-          </button>
+          </Link>
         </div>
 
         {/* Divider for larger screens */}
-        <div className="hidden md:block border-l border-gray-300 h-20 mx-6"></div>
+        <div className="hidden h-20 mx-6 border-l border-gray-300 md:block"></div>
 
         {/* Information Section */}
-        <div className="flex flex-col md:flex-row md:w-2/3 items-center gap-6 md:gap-12">
+        <div className="flex flex-col items-center gap-6 md:flex-row md:w-2/3 md:gap-12">
           <div className="flex flex-col items-center md:items-start">
-            <p className="text-gray-600 text-xl">
+            <p className="text-xl text-gray-600">
               Suggested books:{" "}
               <span className="text-blue-600">{suggestedBooks}</span>
             </p>
-            <p className="text-gray-600 text-xl">
+            <p className="text-xl text-gray-600">
               Wanted books: <span className="text-blue-600">{wantedBooks}</span>
             </p>
           </div>
-          <div className="hidden md:block border-l border-gray-300 h-16"></div>
+          <div className="hidden h-16 border-l border-gray-300 md:block"></div>
           <div className="flex flex-col items-center md:items-start">
-            <p className="text-gray-600 text-xl">
+            <p className="text-xl text-gray-600">
               Books received:{" "}
               <span className="text-blue-600">{booksReceived}</span>
             </p>
-            <p className="text-gray-600 text-xl">
+            <p className="text-xl text-gray-600">
               Books sent: <span className="text-blue-600">{booksSent}</span>
             </p>
           </div>
