@@ -1,5 +1,8 @@
 import bookswapbanner from "../assets/BookSwap.png";
-const Banner = ({ handleOpenLoginView }) => {
+import { useRegisterModal } from "../context/RegisterModalContext";
+const Banner = () => {
+  const { setRegisterModal } = useRegisterModal();
+
   return (
     <section className="container py-12 bg-gray-100 ">
       <div className="flex flex-col items-center justify-between px-6 md:flex-row md:px-12">
@@ -15,7 +18,7 @@ const Banner = ({ handleOpenLoginView }) => {
           </p>
           <div className="mt-5 space-x-4">
             <button
-              onClick={handleOpenLoginView}
+              onClick={() => setRegisterModal(true)}
               className="px-6 py-2 font-semibold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700"
             >
               Sign Up

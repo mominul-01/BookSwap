@@ -6,33 +6,28 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
+import { useRegisterModal } from "../../context/RegisterModalContext";
+import { useLoginModal } from "../../context/LoginModalContext";
+import { profileDropdown } from "../../data/dummyData";
+import { useAuth } from "../../context/AuthContext";
+import AvterImage from "../AvterImage";
 
 const ProfileDropdown = () => {
   const [anchorElUser, setAnchorElUser] = useState(null);
-  const settings = [
-    {
-      label: "Profile",
-      plink: "/profile",
-    },
-    {
-      label: "Account",
-      plink: "/account",
-    },
-    {
-      label: "Dashboard",
-      plink: "/dashboard",
-    },
-    {
-      label: "Logout",
-      plink: "/logout",
-    },
-  ];
-
+  const { token, user, logout } = useAuth();
+  const { setRegisterModal } = useRegisterModal();
+  const { setLoginModal } = useLoginModal();
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
+  const handleLogout = () => {
+    logout();
+    toast.warn("Opps! You are now logged out");
     setAnchorElUser(null);
   };
 
@@ -50,11 +45,11 @@ const ProfileDropdown = () => {
             },
           }}
         >
-          <Avatar alt="Sahos Mia" src="/static/images/avatar/2.jpg" />
-          <span className="text-sm font-bold ">Mominul</span>
+          <AvterImage src={user?.avater} />
         </IconButton>
         <Menu
           sx={{ mt: "45px" }}
+          className="w-96"
           id="menu-appbar"
           anchorEl={anchorElUser}
           anchorOrigin={{
@@ -69,13 +64,48 @@ const ProfileDropdown = () => {
           open={Boolean(anchorElUser)}
           onClose={handleCloseUserMenu}
         >
-          {settings.map((setting) => (
-            <MenuItem key={setting} onClick={handleCloseUserMenu}>
-              <Link to={setting.plink} sx={{ textAlign: "center" }}>
-                {setting.label}
-              </Link>
-            </MenuItem>
-          ))}
+          {token
+            ? [
+                ...profileDropdown.map((item) => (
+                  <MenuItem
+                    key={item.plink}
+                    component={Link}
+                    to={item.plink}
+                    onClick={handleCloseUserMenu}
+                    sx={{
+                      width: "100%",
+                      display: "block",
+                      textDecoration: "none", // Removes underline
+                    }}
+                  >
+                    {item.label}
+                  </MenuItem>
+                )),
+                <MenuItem key="logout" onClick={handleLogout}>
+                  <button>Logout</button>
+                </MenuItem>,
+              ]
+            : [
+                <MenuItem
+                  key="signup"
+                  onClick={() => {
+                    handleCloseUserMenu();
+                    setRegisterModal(true);
+                  }}
+                >
+                  <button>Sign Up</button>
+                </MenuItem>,
+
+                <MenuItem
+                  key="login"
+                  onClick={() => {
+                    handleCloseUserMenu();
+                    setLoginModal(true);
+                  }}
+                >
+                  <button>Login</button>
+                </MenuItem>,
+              ]}
         </Menu>
       </Box>
     </>

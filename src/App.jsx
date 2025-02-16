@@ -1,16 +1,27 @@
-import Home from "./Pages/Home";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
+import router from "./router/router";
+import { AuthProvider } from "./context/AuthContext";
+import LoginModalProvider from "./context/LoginModalContext";
+import RegisterModalProvider from "./context/RegisterModalContext";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes >
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <AuthProvider>
+      <RegisterModalProvider>
+        <LoginModalProvider>
+          <RouterProvider router={router}></RouterProvider>
+          <ToastContainer
+            position="bottom-right"
+            autoClose={4000}
+            newestOnTop
+            theme="dark"
+          />
+        </LoginModalProvider>
+      </RegisterModalProvider>
+    </AuthProvider>
   );
 }
 
